@@ -821,6 +821,10 @@ address {
 .modal-form {
 }
 
+.modal-icon {
+  position: absolute;
+  left: 16px;
+}
 .modal-title {
   display: flex;
   flex-direction: column;
@@ -839,7 +843,7 @@ address {
   gap: 26px;
 }
 .modal-item {
-  display: flex;
+  position: relative;
   flex-direction: column;
 }
 
