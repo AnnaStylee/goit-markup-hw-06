@@ -462,6 +462,63 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label for="name" class="modal-label">Name</label
+              ><input
+                type="text"
+                id="name"
+                class="modal-input modal-name"
+                placeholder=""
+                required
+                pattern="^[a-zA-Za-яА-Я]+$"
+              />
+            </li>
+            <li class="modal-item">
+              <label for="phone" class="modal-label">Phone</label
+              ><input
+                type="tel"
+                id="phone"
+                class="modal-input"
+                placeholder=""
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+            </li>
+            <li class="modal-item">
+              <label for="email" class="modal-label">Email</label
+              ><input
+                type="email"
+                id="email"
+                class="modal-input"
+                placeholder=""
+              />
+            </li>
+            <li class="modal-item">
+              <label for="coment" class="modal-label">Coment</label
+              ><input
+                type="coment"
+                id="coment"
+                class="modal-input text-coment coment-box"
+                placeholder="Text input"
+              />
+            </li>
+            <li class="modal-item">
+              <label for="checkbox" class="modal-label"
+                >I accept the terms and conditions of the
+                <a href=""
+                  ><span class="modal-text-span">Privacy Polisy</span></a
+                > </label
+              ><input type="checkbox" id="checkbox" class="modal-input" />
+            </li>
+          </ul>
+          <button type="submit" class="modal-send">Send</button>
+        </form>
       </div>
     </div>
     <script type="module" src="./js/modal.js"></script>
