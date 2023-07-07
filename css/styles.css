@@ -824,7 +824,11 @@ address {
 .modal-icon {
   position: absolute;
   left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-title {
   display: flex;
   flex-direction: column;
@@ -840,9 +844,10 @@ address {
 .modal-list {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  margin-bottom: 8px;
 }
 .modal-item {
+  display: flex;
   position: relative;
   flex-direction: column;
 }
@@ -855,6 +860,11 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.input {
+  fill: #4d5ae5;
 }
 
 .modal-input {
@@ -869,16 +879,16 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.coment-box {
-  width: 360px;
+.comment-box {
+  width: 100%;
   height: 120px;
 }
 
-.text-coment {
+.text-comment {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 
