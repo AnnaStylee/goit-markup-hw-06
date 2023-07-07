@@ -696,10 +696,13 @@ address {
   gap: 24px;
 }
 
+.footer-modal-label {
+}
+
 .footer-modal {
 }
 
-.footer-input {
+.footer-modal-input {
   background-color: transparent;
   color: #ffffff;
   font-size: 12px;
