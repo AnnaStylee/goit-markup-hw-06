@@ -465,7 +465,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="footer-btn">
+            <button type="email" class="footer-btn">
               Subscribe
               <svg class="svg-footer" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame"></use>
@@ -486,9 +486,9 @@
         </button>
 
         <form class="modal-form">
-          <div class="">
+          <div class="modal-list">
             <label for="user-name" class="modal-label">Name</label>
-            <div>
+            <div class="modal-item">
               <input
                 type="text"
                 id="user-name"
@@ -503,9 +503,9 @@
             </div>
           </div>
 
-          <div>
+          <div class="modal-list">
             <label for="phone" class="modal-label">Phone</label>
-            <div>
+            <div class="modal-item">
               <input
                 type="tel"
                 id="phone"
@@ -521,9 +521,9 @@
             </div>
           </div>
 
-          <div>
+          <div class="modal-list">
             <label for="email" class="modal-label">Email</label>
-            <div>
+            <div class="modal-item">
               <input
                 type="email"
                 id="email"
@@ -535,9 +535,10 @@
               </svg>
             </div>
           </div>
-          <div>
+
+          <div class="modal-list">
             <label for="coment" class="modal-label">Coment</label>
-            <div>
+            <div class="modal-item">
               <input
                 type="coment"
                 id="coment"
@@ -554,6 +555,7 @@
                 <span class="modal-text-span">Privacy Polisy</span></a
               >
             </label>
+
             <input type="checkbox" id="checkbox" class="modal-input" />
           </div>
           <button type="submit" class="modal-send">Send</button>
