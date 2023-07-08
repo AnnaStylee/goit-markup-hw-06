@@ -904,24 +904,23 @@ address {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: #4d5ae5;
 }
 
 /* ===================CHECKBOX================== */
 
 .modal-checkbox {
   margin-bottom: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .modal-agreement-checkbox {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+
   border-radius: 2px;
 }
-
-.modal-agreement {
+.visually-hidden .modal-agreement {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -948,10 +947,10 @@ address {
   color: #4d5ae5;
 }
 
-.modal-agreement-checkbox:checked {
-  background-size: 10px 8px;
-  background-color: var(--accent-color);
-  border-color: transparent;
+.modal-agreement-checkbox + .modal-agreement > .modal-agreement-desc {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-send {
