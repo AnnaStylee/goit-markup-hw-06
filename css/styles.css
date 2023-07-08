@@ -924,6 +924,7 @@ address {
   align-items: center;
   color: #8e8f99;
   gap: 8px;
+  margin-bottom: 24px;
 }
 
 .modal-agreement-desc {
