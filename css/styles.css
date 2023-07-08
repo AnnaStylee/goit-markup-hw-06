@@ -914,12 +914,9 @@ address {
 
 .modal-agreement-checkbox {
   appearance: none;
-  width: 16px;
-  height: 16px;
-
-  border-radius: 2px;
 }
-.modal-agreement .visually-hidden {
+/* 
+modal-agreement . {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -929,28 +926,43 @@ address {
   gap: 8px;
   margin-bottom: 24px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+
+*/
+
+.modal-agreement {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  color: #8e8f99;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
 .modal-agreement-desc {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  border: 1px solid rgb(46, 47, 66, 0.4);
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgb(46, 47, 66, 0.4);
-  fill: transparent;
 }
 
 .modal-agreement-link {
   color: #4d5ae5;
 }
 
-.modal-agreement-checkbox + .modal-agreement > .modal-agreement-desc {
+.modal-agreement-checkbox:checked + .modal-agreement > .modal-agreement-desc {
   background-color: #404bbf;
+  border-radius: 2px;
+  border: 1px solid rgb(46, 47, 66, 0.4);
   border: none;
   fill: #f4f4fd;
 }
