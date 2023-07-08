@@ -909,6 +909,7 @@ address {
 /* ===================CHECKBOX================== */
 
 .modal-checkbox {
+  display: flex;
   margin-bottom: 24px;
 }
 
